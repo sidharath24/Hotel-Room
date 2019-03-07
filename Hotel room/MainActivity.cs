@@ -33,11 +33,7 @@ namespace Hotel_room
                         cbtg = (CheckBox)FindViewById(Resource.Id.cbTourist);
                         btOkay = (Button)FindViewById(Resource.Id.btnOkay);
 
-            //   if(rdbsui.Checked)
-            //   {
-            //       total = 1400 * etnight.ToString();
-
-            //   }
+         
 
             btOkay.Click += delegate
             {
