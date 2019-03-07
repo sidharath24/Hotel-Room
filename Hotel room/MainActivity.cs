@@ -17,8 +17,7 @@ namespace Hotel_room
         RadioButton rdbsui, rdbdou, rdbsin;
         CheckBox cbtran, cbsp, cbtg;
         Button btOkay;
-        double total = 0;
-        
+        double total = 0, nig;     
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -42,13 +41,41 @@ namespace Hotel_room
 
             btOkay.Click += delegate
             {
-                if (cbtran.Checked)
-                    total = total + 1000;
-                if (cbsp.Checked)
-                    total = total + 700;
-                if (cbtg.Checked)
-                    total = total + 2000;
 
+                nig = double.Parse(etnight.Text);
+
+                if (rdbsui.Checked)
+                {
+
+                    total = 1400 * nig;
+
+                    if (cbtran.Checked)
+                        total = total + 1000;
+                    if (cbsp.Checked)
+                        total = total + 700;
+                    if (cbtg.Checked)
+                        total = total + 2000;
+                }
+                else if (rdbdou.Checked)
+                {
+                    total = 900 * nig;
+                    if (cbtran.Checked)
+                        total = total + 1000;
+                    if (cbsp.Checked)
+                        total = total + 700;
+                    if (cbtg.Checked)
+                        total = total + 2000;
+                }
+                else if (rdbsin.Checked)
+                {
+                    total = 600 * nig;
+                    if (cbtran.Checked)
+                        total = total + 1000;
+                    if (cbsp.Checked)
+                        total = total + 700;
+                    if (cbtg.Checked)
+                        total = total + 2000;
+                }
                 etTotalcash.Text = total.ToString();
             };
                     
