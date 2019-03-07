@@ -16,15 +16,15 @@ namespace Hotel_room
         EditText etTotalcash, etnight;
         RadioButton rdbsui, rdbdou, rdbsin;
         CheckBox cbtran, cbsp, cbtg;
-      //  Button btOkay;
+        Button btOkay;
         double total = 0;
         
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-            /*
-                 //       etTotalcash = (EditText)FindViewById(Resource.Id.etTotal);
+            
+                        etTotalcash = (EditText)FindViewById(Resource.Id.etTotal);
                         etnight = (EditText)FindViewById(Resource.Id.etNights);
                         rdbsui = (RadioButton)FindViewById(Resource.Id.rdbSuite);
                         rdbdou = (RadioButton)FindViewById(Resource.Id.rdbDouble);
@@ -32,7 +32,7 @@ namespace Hotel_room
                         cbtran = (CheckBox)FindViewById(Resource.Id.cbTrans);
                         cbsp = (CheckBox)FindViewById(Resource.Id.cbSpa);
                         cbtg = (CheckBox)FindViewById(Resource.Id.cbTourist);
-                  //      btOkay = (Button)FindViewById(Resource.Id.btnOkay);
+                        btOkay = (Button)FindViewById(Resource.Id.btnOkay);
 
             //   if(rdbsui.Checked)
             //   {
@@ -40,19 +40,19 @@ namespace Hotel_room
 
             //   }
 
-        /*    btOkay.Click += delegate
+            btOkay.Click += delegate
             {
                 if (cbtran.Checked)
-                    total = 1000;
+                    total = total + 1000;
                 if (cbsp.Checked)
-                    total = 700;
+                    total = total + 700;
                 if (cbtg.Checked)
-                    total = 2000;
+                    total = total + 2000;
 
                 etTotalcash.Text = total.ToString();
             };
                     
-          */  
+            
           
 
 

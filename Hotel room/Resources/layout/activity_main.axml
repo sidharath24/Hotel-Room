@@ -22,7 +22,8 @@
 			<EditText
 				android:inputType="textPersonName"
 				android:layout_column="1"
-				android:id="@+id/etGuestName" />
+				android:id="@+id/etGuestName"
+				android:layout_width="100dp" />
 			
 		</TableRow>
 		<TableRow
@@ -112,9 +113,18 @@
 				android:text="Total"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
 				android:id="@+id/tvTotal" />
-			
+		
+				<EditText
+				android:inputType="number"
+				android:layout_column="1"
+				android:id="@+id/etTotal" />
 		</TableRow>
 		
+		<Button
+			android:text="Okay"
+			android:id="@+id/btnOkay"
+			android:minWidth="7dp"
+			android:textSize="12dp" />
 		
 
 	</TableLayout>
