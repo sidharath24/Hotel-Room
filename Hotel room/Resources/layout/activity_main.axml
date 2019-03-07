@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-	<TableLayout
+	 <TableLayout
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
@@ -18,11 +18,11 @@
 				android:minHeight="30px"
 				android:text="Guest Name"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView1" />
+				android:id="@+id/tvGuestName" />
 			<EditText
 				android:inputType="textPersonName"
 				android:layout_column="1"
-				android:id="@+id/editText1" />
+				android:id="@+id/etGuestName" />
 			
 		</TableRow>
 		<TableRow
@@ -33,11 +33,11 @@
 				android:minHeight="30px"
 				android:text="Nights"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView4" />
+				android:id="@+id/tvNights" />
 			<EditText
 				android:inputType="number"
 				android:layout_column="1"
-				android:id="@+id/editText2" />
+				android:id="@+id/etNights" />
 			
 		</TableRow>
 		<TableRow
@@ -48,31 +48,75 @@
 				android:minHeight="30px"
 				android:text="Room Type"
 				xmlns:p4="http://xamarin.com/mono/android/designer"
-				android:id="@+id/textView7" />
-			<RadioGroup
-				android:minWidth="25px"
-				android:minHeight="25px"
-				android:layout_column="1"
-				android:orientation="horizontal"
-				android:id="@+id/radioGroup1">
-				<RadioButton
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:checked="true"
-					android:text="Suite"
-					android:id="@+id/radioButton1" />
-				<RadioButton
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Double"
-					android:id="@+id/radioButton2" />
-				<RadioButton
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Single"
-					android:id="@+id/radioButton3" />
-			</RadioGroup>
+				android:id="@+id/tvRoomType" />
 		</TableRow>
+		<RadioGroup
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_column="1"
+			android:id="@+id/radioGroup1"
+			android:layout_marginLeft="70dp">
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="Suite"
+				android:id="@+id/rdbSuite" />
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Double"
+				android:id="@+id/rdbDouble" />
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Single"
+				android:id="@+id/rdbSingle" />
+		</RadioGroup>
+		
+		<TableRow
+			android:id="@+id/tableRow4">
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:text="Other Services"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/tvOtherServices" />
+		</TableRow>
+		<CheckBox
+			android:text="Transportation"
+			android:minHeight="30px"
+			android:id="@+id/cbTrans"
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="70dp" />
+		<CheckBox
+			android:text="Spa"
+			android:minWidth="30px"
+			android:minHeight="30px"
+			android:id="@+id/cbSpa"
+			android:layout_marginLeft="70dp" />
+		<CheckBox
+			android:text="Tourist Guide"
+			android:minWidth="30px"
+			android:minHeight="30px"
+			android:id="@+id/cbTourist"
+			android:layout_marginLeft="70dp" /> 
+			
+		<TableRow
+			android:id="@+id/tableRow4">
+			<TextView
+				p4:placeholder="true"
+				android:minWidth="30px"
+				android:minHeight="30px"
+				android:text="Total"
+				xmlns:p4="http://xamarin.com/mono/android/designer"
+				android:id="@+id/tvTotal" />
+			
+		</TableRow>
+		
+		
+
 	</TableLayout>
 	
 	
