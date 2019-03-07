@@ -72,6 +72,11 @@ namespace Hotel_room
                     if (cbtg.Checked)
                         total = total + 2000;
                 }
+                 else
+                {
+                    Toast.MakeText(this, "Please enter a room type", ToastLength.Long).Show();
+                }
+                total = total + (0.13 * total); 
                 etTotalcash.Text = total.ToString();
             };
                     
